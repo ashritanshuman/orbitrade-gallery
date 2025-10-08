@@ -47,16 +47,17 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
+        cosmic: {
+          glow: "hsl(var(--cosmic-glow))",
+          "glow-intense": "hsl(var(--cosmic-glow-intense))",
+          nebula: "hsl(var(--nebula-purple))",
+          star: "hsl(var(--star-white))",
         },
+      },
+      fontFamily: {
+        orbitron: ["Orbitron", "sans-serif"],
+        exo: ["Exo 2", "sans-serif"],
+        inter: ["Inter", "sans-serif"],
       },
       borderRadius: {
         lg: "var(--radius)",

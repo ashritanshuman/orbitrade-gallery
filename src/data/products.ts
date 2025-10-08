@@ -1,0 +1,68 @@
+import { Product } from '@/store/useStore';
+
+export const products: Product[] = [
+  {
+    sku: 'MD-001',
+    name: 'Moon Dust Capsule',
+    price: 9.99,
+    type: 'consumable',
+    description: 'Authentic moon dust collected from the Sea of Tranquility. Perfect for cosmic rituals and zero-gravity experiments.',
+    color: '#C0C0C0',
+  },
+  {
+    sku: 'AT-042',
+    name: 'Alien Tech Wristband',
+    price: 249.0,
+    type: 'wearable',
+    description: 'Advanced extraterrestrial technology in a sleek wristband. Features unknown capabilities waiting to be discovered.',
+    color: '#00FF88',
+  },
+  {
+    sku: 'CC-07',
+    name: 'Cosmic Cloak',
+    price: 129.0,
+    type: 'clothing',
+    description: 'Woven from stardust and nebula fragments. Provides protection from solar winds and makes you look mysteriously cool.',
+    color: '#9370DB',
+  },
+  {
+    sku: 'AS-11',
+    name: 'Asteroid Stone',
+    price: 49.0,
+    type: 'mineral',
+    description: 'A rare crystalline formation from the asteroid belt. Contains trace elements from the birth of our solar system.',
+    color: '#8B4513',
+  },
+  {
+    sku: 'HS-88',
+    name: 'Holographic Space Shoes',
+    price: 199.0,
+    type: 'footwear',
+    description: 'Walk on air with anti-gravity soles and holographic projections. Perfect for moonwalking on any surface.',
+    color: '#00BFFF',
+  },
+  {
+    sku: 'GT-23',
+    name: 'Gravity Toolkit',
+    price: 349.0,
+    type: 'gadget',
+    description: 'Essential tools for manipulating gravitational fields. Includes micro black hole stabilizer and quantum wrench.',
+    color: '#FFD700',
+  },
+  {
+    sku: 'NE-55',
+    name: 'Nebula Essence',
+    price: 79.0,
+    type: 'consumable',
+    description: 'Captured essence of the Orion Nebula. Rumored to grant visions of distant galaxies when consumed.',
+    color: '#FF1493',
+  },
+  {
+    sku: 'QC-99',
+    name: 'Quantum Communicator',
+    price: 499.0,
+    type: 'gadget',
+    description: 'Instantaneous communication across any distance using quantum entanglement. No signal lag, ever.',
+    color: '#4169E1',
+  },
+];
