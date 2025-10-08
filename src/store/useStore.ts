@@ -5,7 +5,11 @@ export interface Product {
   sku: string;
   name: string;
   price: number;
+  originalPrice?: number;
+  discount?: number;
   type: string;
+  category: string;
+  collection: string;
   description: string;
   color: string;
 }
@@ -35,7 +39,8 @@ interface StoreState {
   // Animations
   showSpaceshipAnimation: boolean;
   showRocketAnimation: boolean;
-  triggerSpaceshipAnimation: () => void;
+  spaceshipStartPosition: { x: number; y: number } | null;
+  triggerSpaceshipAnimation: (position: { x: number; y: number }) => void;
   triggerRocketAnimation: () => void;
 }
 
@@ -92,9 +97,10 @@ export const useStore = create<StoreState>()(
       // Animations
       showSpaceshipAnimation: false,
       showRocketAnimation: false,
-      triggerSpaceshipAnimation: () => {
-        set({ showSpaceshipAnimation: true });
-        setTimeout(() => set({ showSpaceshipAnimation: false }), 2000);
+      spaceshipStartPosition: null,
+      triggerSpaceshipAnimation: (position) => {
+        set({ showSpaceshipAnimation: true, spaceshipStartPosition: position });
+        setTimeout(() => set({ showSpaceshipAnimation: false, spaceshipStartPosition: null }), 2000);
       },
       triggerRocketAnimation: () => {
         set({ showRocketAnimation: true });

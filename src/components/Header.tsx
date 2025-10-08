@@ -62,16 +62,16 @@ export const Header = () => {
               </Button>
             </Link>
 
-            <Link to="/cart">
-              <Button variant="ghost" size="icon" className="relative">
-                <ShoppingCart className="w-5 h-5" />
-                {count > 0 && (
-                  <Badge className="absolute -top-1 -right-1 px-1.5 py-0.5 text-xs bg-primary">
-                    {count}
-                  </Badge>
-                )}
-              </Button>
-            </Link>
+          <Link to="/cart" className="relative" data-cart-icon>
+            <Button variant="ghost" size="icon" className="relative">
+              <ShoppingCart className="w-5 h-5" />
+              {count > 0 && (
+                <Badge className="absolute -top-1 -right-1 px-1.5 py-0.5 text-xs bg-primary">
+                  {count}
+                </Badge>
+              )}
+            </Button>
+          </Link>
           </div>
         </div>
       </div>

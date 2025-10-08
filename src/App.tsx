@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import { SpaceshipAnimation } from "@/components/animations/SpaceshipAnimation";
 import { RocketAnimation } from "@/components/animations/RocketAnimation";
 import Home from "./pages/Home";
@@ -22,8 +23,6 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Header />
-        <SpaceshipAnimation />
-        <RocketAnimation />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop />} />
@@ -32,6 +31,9 @@ const App = () => (
           <Route path="/buy-a-planet" element={<BuyAPlanet />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
+        <SpaceshipAnimation />
+        <RocketAnimation />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
