@@ -12,6 +12,7 @@ export interface Product {
   collection: string;
   description: string;
   color: string;
+  image: string;
 }
 
 export interface CartItem extends Product {

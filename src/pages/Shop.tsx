@@ -172,10 +172,10 @@ const Shop = () => {
                 )}
 
                 <div
-                  className="h-48 relative bg-gradient-to-br from-card to-muted"
+                  className="h-48 relative bg-gradient-to-br from-card to-muted overflow-hidden"
                   onClick={() => setSelectedProduct(product)}
                 >
-                  <ProductViewer color={product.color} type={product.type} />
+                  <ProductViewer image={product.image} name={product.name} />
                   <div className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <Sparkles className="w-8 h-8 text-primary" />
                   </div>
@@ -266,8 +266,8 @@ const Shop = () => {
               </DialogHeader>
 
               <div className="grid md:grid-cols-2 gap-6">
-                <div className="h-64 rounded-lg bg-gradient-to-br from-card to-muted">
-                  <ProductViewer color={selectedProduct.color} type={selectedProduct.type} />
+                <div className="h-64 rounded-lg bg-gradient-to-br from-card to-muted overflow-hidden">
+                  <ProductViewer image={selectedProduct.image} name={selectedProduct.name} />
                 </div>
 
                 <div className="space-y-4">
